@@ -1,0 +1,85 @@
+main{
+    margin: 0% 6%;
+    
+}
+body{
+   background-color: lightgray;
+   font-family: 'Kufam', cursive;
+}
+section{
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 2em 0;
+    
+}
+.player img{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    
+}
+.top-player, .blogs, .courses-eliment{
+    display: grid;
+    grid-gap: 30px;
+    
+}
+.top-player, .courses-eliment{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+.player, .blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thamnail img{
+    width: 150px;
+    margin-right: 20px;
+
+}
+.courses-image img{
+    width: 300px;
+}
+.course-info{
+    display: flex;
+}
+.rating{
+    margin-right: 5.5em;
+    margin-top: 1em;
+}
+.time{
+    margin-top: 1em; 
+}
+.courses-eliment{
+    place-items: center;
+    align-items: center;
+    
+}
+.fill{
+    color: gold;
+}
+.unfill{
+    color: lightgray;
+}
+
+
+@media(max-width:992px){
+    .top-player, .courses-eliment{
+            grid-template-columns: repeat(2, 1fr);}       
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    
+}
+@media(max-width:664px){
+    .top-player, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    .blog, .courses{
+        display: block;
+    }
+}
