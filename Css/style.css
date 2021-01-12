@@ -64,7 +64,9 @@ section{
 .unfill{
     color: lightgray;
 }
-
+h1{
+    color: hotpink;
+}
 
 @media(max-width:992px){
     .top-player, .courses-eliment{
